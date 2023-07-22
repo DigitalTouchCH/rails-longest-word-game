@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+
+/* Réinitialiser les styles de la liste par défaut */
+ul.square-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Appliquer le style aux balises <li> */
+ul.square-list li {
+  float: left; /* Aligner les balises <li> horizontalement */
+  width: 30px; /* Ajuster la taille des carrés selon vos besoins */
+  height: 30px; /* Ajuster la taille des carrés selon vos besoins */
+  background-color: rgb(31, 120, 192);
+  color: white;
+  text-align: center;
+  line-height: 30px; /* Ajuster la ligne verticale selon vos besoins */
+  margin: 5px; /* Espacement entre les carrés */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Ajouter une ombre aux carrés */
+}
+
+.no-underline {
+  text-decoration: none;
+  color: inherit;
+}
